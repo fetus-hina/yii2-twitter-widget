@@ -36,10 +36,13 @@ class TweetButton extends Widget
 
     public function run()
     {
+        TwitterWidgetAsset::register($this->view);
+
         $options = [ 'class' => 'twitter-share-button' ];
         if ($this->size === 'large') {
             $options['data-size'] = $this->size;
         }
+
         return Html::a(
             $this->baseText,
             $this->buildUrl(),
