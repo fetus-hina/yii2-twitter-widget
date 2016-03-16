@@ -15,4 +15,7 @@ class TwitterWidgetAsset extends AssetBundle
     public $js = [
         'widgets.js',
     ];
+    public $jsOptions = [
+        'async' => 'async',
+    ];
 }
